@@ -1,7 +1,9 @@
-package com.proyect.pom;
+package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
+import library.base;
 
 public class SingInPage extends base {
 	By UserName = By.name("userName");

@@ -1,4 +1,4 @@
-package com.proyect.pom;
+package testcases;
 
 import static org.junit.Assert.*;
 
@@ -6,6 +6,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+
+import pages.SingInPage;
 
 public class SingIn_Case {
  private WebDriver driver;

@@ -1,4 +1,4 @@
-package com.proyect.pom;
+package testcases;
 
 import static org.junit.Assert.*;
 
@@ -8,6 +8,8 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
+import pages.ResgisterPage;
 
 public class RegisterCase {
  private WebDriver driver;

@@ -1,4 +1,4 @@
-package com.proyect.pom;
+package testcases;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
