@@ -6,24 +6,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import library.base;
-
-public class ResgisterPage extends base {
-
+public class ResgisterPage extends Base {
 	By Registerlinklocator = By.linkText("REGISTER");
 	By RegisterPageLocator = By.xpath("//img[@src='images/mast_register.gif']");
-	
 	By UserNameLocator = By.id("email");
 	By PasswordLocator = By.name("password");
 	By ConfirmPasswordLocator = By.cssSelector("input[name='confirmPassword'");
-	
 	By RegisterBtnLocater = By.name("submit");
-	
 	By RegisteredMessage = By.tagName("font");
 	
 	public ResgisterPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
 	}
 
 	public void registerUser() throws InterruptedException  {

@@ -1,4 +1,4 @@
-package library;
+package pages;
 
 import java.util.List;
 
@@ -7,20 +7,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 
-public class base {
+public class Base {
 
 	private WebDriver driver;
 	
-	public base(WebDriver driver) {
+	public Base(WebDriver driver) {
 		this.driver=driver;
-		
 	}
 	
 	public WebDriver edgeDriverConnection() {
     System.setProperty("webdriver.edge.driver", "drivers/msedgedriver.exe");
     driver = new EdgeDriver();
     return driver;
-    
 	}
 	
 	public WebElement findElement(By locator) {
@@ -31,7 +29,7 @@ public class base {
 	   return driver.findElements(locator);
 	   
    }
-	public String GetText(WebElement element) {
+	public String getText(WebElement element) {
 		return element.getText();
 	}
 	
@@ -40,14 +38,13 @@ public class base {
 	}
 	public void type (String inputText, By locator) {
 		driver.findElement(locator).sendKeys(inputText);
-		
 	}
 	
 	public void click (By locator) {
 		driver.findElement(locator).click();
 	}
 	
-	public  Boolean isDisplayed(By locator) {
+	public boolean isDisplayed(By locator) {
 	 try {
 		 return driver.findElement(locator).isDisplayed();
 	 } catch (org.openqa.selenium.NoSuchElementException e) {
@@ -56,5 +53,9 @@ public class base {
 	}
 	public void visit(String url) {
 		driver.get(url);
+	}
+	
+	public void close() {
+		driver.close();
 	}
 }
