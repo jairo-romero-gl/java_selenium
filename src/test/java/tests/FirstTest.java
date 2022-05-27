@@ -7,6 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.concurrent.TimeUnit;
 
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -48,6 +49,7 @@ public class FirstTest {
 		WebElement searchBox = driver.findElement(By.name("q"));
 		searchBox.sendKeys("Hola Mundo");
 		searchBox.submit();
+		
 		
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		
