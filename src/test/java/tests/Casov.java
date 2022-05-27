@@ -25,7 +25,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
-public class caso_2 {
+public class Casov {
 
 	private WebDriver driver;
 	By videoLinkLocator =By.cssSelector("a[href=\"https://www.youtube.com/watch?v=R_hh3jAqn8M\"]");	

@@ -5,7 +5,7 @@ import java.util.Random;
 import org.junit.Before;
 import org.junit.Test;
 
-public class text1 {
+public class Text {
 	private Random random;
 	
 	@Test

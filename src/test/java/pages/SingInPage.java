@@ -3,9 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import library.base;
-
-public class SingInPage extends base {
+public class SingInPage extends base {            //this class extends from the base file
 	By UserName = By.name("userName");
 	By Passlocator = By.name("password");
 	By SignInBtnLocator = By.name("submit");
@@ -18,10 +16,10 @@ public class SingInPage extends base {
 
 	public SingInPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+		
 	}
 
-	public void singIn() {
+	public void singIn() {                         //type the characters
 		if (isDisplayed(UserName)) {
 			type("julian8admin", UserName);
 			type("julian8admin", Passlocator);
